@@ -12,11 +12,24 @@ public class MainApp {
 		//I have to change the Entire Car Object like below.
 		
 		
-		Bike bike = new Bike();
-		bike.ride();//Bike riding...
+		//Bike bike = new Bike();
+		//bike.ride();//Bike riding...
 		
 		//here this object creation was dependent on Bike Class or Car Class
 		//This is Tight Coupling.
+		
+		Vehicle obj = new Car();
+		obj.drive();
+		
+		Vehicle obj2 = new Bike();
+		obj2.drive();
+		
+		//here also right side part new Car or new Bike
+		//I want to change so it is Again depend on Car and Bike classes.
+		//So I want some External source that will Give the Dependency of the Object.
+		//That External Framework is called Spring Framework.
+		//By Using SpringFramework we Can Avoid Tight Coupling.
+		
 	
 	}
 
