@@ -1,4 +1,4 @@
-package springbasic;
+package tightcoupling;
 
 public class MainApp {
 

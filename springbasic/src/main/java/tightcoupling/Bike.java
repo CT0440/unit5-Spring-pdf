@@ -1,4 +1,4 @@
-package springbasic;
+package tightcoupling;
 
 public class Bike implements Vehicle{
 	//Bike have a method ride.
