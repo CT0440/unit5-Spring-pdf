@@ -1,26 +1,11 @@
 package di_xml;
 
-public class Tyre{
-	private String brand;
-	
-	public Tyre(String brand) {
-		super();
-		this.brand = brand;
-	}
+import org.springframework.stereotype.Component;
 
-	public String getBrand() {
-		return brand;
-	}
-
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
-
-	
-
-	@Override
-	public String toString() {
-		return "Tyre [brand=" + brand + "]";
-	}
-
+@Component  // Marks Tyre as a Spring bean
+public class Tyre {
+    @Override
+    public String toString() {
+        return "it's working..";
+    }
 }

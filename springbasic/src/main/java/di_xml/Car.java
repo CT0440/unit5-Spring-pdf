@@ -1,11 +1,15 @@
 package di_xml;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
-public class Car implements Vehicle{
-	public void drive() {
-		System.out.println("car Driving...");
-	}
+@Component  // Marks Car as a Spring bean
+public class Car {
 
+    @Autowired  // Automatically injects Tyre bean
+    private Tyre tyre;
+
+    public void drive() {
+        System.out.println("Car " + tyre);
+    }
 }
