@@ -10,6 +10,7 @@
 <!-- <bean id = "vehicle" class="di_xml.Bike"></bean> -->
 <!-- <context:component-scan base-package="di_xml" /> -->
 <bean id="tyre" class="di_xml.Tyre">
-<property name="brand" value="MRF"></property>
+<!-- <property name="brand" value="MRF"></property> -->
+<constructor-arg value="Ceat"></constructor-arg>
 </bean>
 </beans>
